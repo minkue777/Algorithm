@@ -1,6 +1,6 @@
 import collections
 
-def solution(participant, completion):
+def solution1(participant, completion):
     temp = 0
     dic = {}
     for part in participant:

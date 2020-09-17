@@ -12,4 +12,14 @@ def solution1(participant, completion):
 
     return answer
 
+def solution2(participant, completion):
+    d = {}
+    for person in participant:
+        d[person] = d.get(person, 0) + 1
+    for person in completion:
+        d[person] -= 1
     
+    ans = [k for k, v in d.items() if v == 1]
+    return ans[0]
+    
+solution2(["Lee", 'Lee', 'jin'], ['Lee'])

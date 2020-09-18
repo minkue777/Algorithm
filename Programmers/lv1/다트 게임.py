@@ -25,7 +25,7 @@ def solution(dartResult):
     return sum(result)
 
 
-print(solution("1S2S3S"))
+print(solution("10S2S3S"))
 s = "10S2S3S"
 p = re.compile('(\d+)([SDT])([*#]?)')
 dart = p.findall(s)

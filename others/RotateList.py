@@ -14,5 +14,4 @@ def clockwise_rotate_matrix(a):
             res[c][row_length-1-r] = a[r][c]
     return res
 
-def check(key, lock):
     

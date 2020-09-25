@@ -10,11 +10,13 @@ def getArgs():
     k = int(input())
     return n, m, lamp, k
 
+
 def numZeros(row):
     count = 0
     for c in row:
         count += (c == 0)
     return count
+
 
 n, m, lamp, k = getArgs()
 Klamp = [r for r in lamp if (numZeros(r) <= k and (k-numZeros(r))%2 == 0)]

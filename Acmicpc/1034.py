@@ -1,4 +1,4 @@
-def getArgs():
+def get_args():
     n, m = map(int, input().split())
     lamp = []
     for i in range(n):
@@ -18,7 +18,7 @@ def numZeros(row):
     return count
 
 
-n, m, lamp, k = getArgs()
+n, m, lamp, k = get_args()
 Klamp = [r for r in lamp if (numZeros(r) <= k and (k-numZeros(r))%2 == 0)]
 d = [False] * len(Klamp)
 ans = 0

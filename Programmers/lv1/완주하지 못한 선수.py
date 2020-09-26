@@ -1,5 +1,3 @@
-import collections
-
 def solution1(participant, completion):
     temp = 0
     dic = {}
@@ -12,6 +10,7 @@ def solution1(participant, completion):
 
     return answer
 
+
 def solution2(participant, completion):
     d = {}
     for person in participant:
@@ -21,5 +20,6 @@ def solution2(participant, completion):
     
     ans = [k for k, v in d.items() if v == 1]
     return ans[0]
-    
+
+
 solution2(["Lee", 'Lee', 'jin'], ['Lee'])
